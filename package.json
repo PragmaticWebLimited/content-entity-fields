@@ -1,0 +1,33 @@
+{
+	"title": "Content Entity Fields",
+	"name": "content-entity-fields",
+	"version": "0.1.0-dev",
+	"description": "",
+	"author": "Pragmatic Web",
+	"license": "GPL-3.0-only",
+	"lint-staged": {
+		"src/**/*.{js,json}": [
+			"eslint",
+			"prettier --list-different"
+		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.7.5",
+		"@babel/plugin-syntax-jsx": "^7.7.4",
+		"@babel/preset-env": "^7.7.6",
+		"@babel/runtime-corejs3": "^7.7.6",
+		"@wordpress/browserslist-config": "^2.6.0",
+		"babel-loader": "^8.0.6",
+		"browserslist": "^4.8.2",
+		"concurrently": "^5.0.1",
+		"cross-env": "^6.0.3",
+		"eslint": "^6.7.2",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"lint-staged": "^9.5.0",
+		"prettier": "npm:wp-prettier@^1.19.1",
+		"webpack": "^4.41.3",
+		"webpack-cli": "^3.3.10"
+	},
+	"dependencies": {}
+}
