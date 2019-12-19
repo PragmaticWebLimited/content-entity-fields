@@ -1,14 +1,36 @@
 {
-	"extends": ["eslint:recommended", "plugin:prettier/recommended"],
 	"env": {
-		"browser": true,
+		"browser": false,
 		"es6": true,
+		"node": true,
 		"jquery": true
 	},
-	"rules": {
-		"prettier/prettier": "error"
+	"extends": [
+		"eslint:recommended",
+		"plugin:prettier/recommended"
+	],
+	"globals": {
+		"document": true,
+		"window": true,
+		"wp": "readonly",
+		"wpApiSettings": "readonly"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
 	},
 	"plugins": [
 		"prettier"
-	]
+	],
+	"root": true,
+	"rules": {
+		"prettier/prettier": "error"
+	},
+	"settings": {
+		"react": {
+			"pragma": "wp"
+		}
+	}
 }
