@@ -22,24 +22,24 @@
 		"useTabs": true
 	},
 	"scripts": {
-		"build": "cross-env NODE_ENV=production webpack",
-		"dev": "cross-env webpack --watch"
+		"build": "cross-env NODE_ENV=production webpack -p",
+		"dev": "cross-env webpack -d --watch"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.7.5",
-		"@babel/preset-env": "^7.7.6",
+		"@babel/core": "^7.7.7",
+		"@babel/preset-env": "^7.7.7",
 		"@babel/preset-react": "^7.7.4",
 		"@wordpress/browserslist-config": "^2.6.0",
 		"babel-loader": "^8.0.6",
 		"browserslist": "^4.8.2",
+		"core-js": "^3.6.0",
 		"cross-env": "^6.0.3",
-		"eslint": "^6.7.2",
+		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.7.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"lint-staged": "^9.5.0",
 		"prettier": "^1.19.1",
-		"webpack": "^4.41.3",
+		"webpack": "^4.41.4",
 		"webpack-cli": "^3.3.10"
-	},
-	"dependencies": {}
+	}
 }
