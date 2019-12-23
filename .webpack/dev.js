@@ -1,3 +1,3 @@
-module.exports = function(configDirs) {
-	return require('./common')(configDirs);
+module.exports = function(settings) {
+	return require('./common')(settings);
 };

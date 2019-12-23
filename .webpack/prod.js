@@ -1,5 +1,5 @@
-module.exports = function(configDirs) {
-	let prodConfig = Object.assign({}, require('./common')(configDirs));
+module.exports = function(settings) {
+	let prodConfig = Object.assign({}, require('./common')(settings));
 
 	prodConfig.mode = 'production';
 

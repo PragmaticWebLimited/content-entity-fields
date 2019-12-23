@@ -1,16 +1,22 @@
-function buildConfig(configDirs) {
+const externals = require('./externals');
+
+/**
+ * Return object for Webpack configuration.
+ *
+ * @param {Object} settings The build config settings.
+ *
+ * @return {Object} The Webpack config.
+ */
+function buildConfig(settings) {
 	return {
+		entry: settings.APP_DIR + '/index.js',
+		externals: externals,
 		mode: 'development',
-		entry: configDirs.APP_DIR + '/index.js',
-		output: {
-			path: configDirs.BUILD_DIR,
-			filename: 'content-entity-fields.js',
-		},
 		module: {
 			rules: [
 				{
 					test: /\.js$/,
-					exclude: /node_modules/,
+					include: [settings.APP_DIR],
 					loader: 'babel-loader',
 					query: {
 						presets: [
@@ -25,6 +31,10 @@ function buildConfig(configDirs) {
 					},
 				},
 			],
+		},
+		output: {
+			path: settings.BUILD_DIR,
+			filename: 'content-entity-fields.js',
 		},
 		stats: {
 			colors: true,

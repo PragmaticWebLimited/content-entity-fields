@@ -5,6 +5,10 @@
 	"description": "",
 	"author": "Pragmatic Web",
 	"license": "GPL-3.0-only",
+	"engines": {
+		"node": "10.13.0",
+		"npm": "6.1.0"
+	},
 	"lint-staged": {
 		"src/**/*.{js,json}": [
 			"eslint",
@@ -38,6 +42,7 @@
 		"eslint-config-prettier": "^6.7.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"lint-staged": "^9.5.0",
+		"path": "^0.12.7",
 		"prettier": "^1.19.1",
 		"webpack": "^4.41.4",
 		"webpack-cli": "^3.3.10"
