@@ -15,20 +15,9 @@ function buildConfig(settings) {
 		module: {
 			rules: [
 				{
-					test: /\.js$/,
+					test: /\.(js|jsx)$/,
 					include: [settings.APP_DIR],
 					loader: 'babel-loader',
-					query: {
-						presets: [
-							[
-								'@babel/preset-env',
-								{
-									corejs: 3,
-									useBuiltIns: 'entry',
-								},
-							],
-						],
-					},
 				},
 			],
 		},
