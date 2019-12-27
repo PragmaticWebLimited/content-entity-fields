@@ -2,6 +2,7 @@
 /node_modules
 /vendor
 /cghooks.lock
+/dist/asset-manifest.json
 
 # Various Mac OS X.
 .DS_Store
