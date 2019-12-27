@@ -1,19 +1,16 @@
 {
 	"presets": [
 		[
+			"@babel/preset-react",
+			{
+				"pragma": "wp.element.createElement"
+			}
+		],
+		[
 			"@babel/preset-env",
 			{
 				"corejs": 3,
 				"useBuiltIns": "entry"
-			}
-		],
-		"@babel/preset-react"
-	],
-	"plugins": [
-		[
-			"@babel/plugin-transform-react-jsx",
-			{
-				"pragma": "wp.element.createElement"
 			}
 		]
 	]

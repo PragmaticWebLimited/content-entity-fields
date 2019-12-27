@@ -1,7 +1,28 @@
-module.exports = function(settings) {
-	let prodConfig = Object.assign({}, require('./common')(settings));
+/**
+ * Webpack production build configuration.
+ */
+const {
+	externals,
+	helpers,
+	loaders,
+	presets,
+} = require('@humanmade/webpack-helpers');
+const { filePath } = helpers;
 
-	prodConfig.mode = 'production';
+// Mutate the loader defaults.
+loaders.css.exclude = /(bower_components|node_modules|vendor)/;
+loaders.eslint.exclude = /(bower_components|node_modules|vendor)/;
+loaders.js.exclude = /(bower_components|node_modules|vendor)/;
 
-	return prodConfig;
-};
+module.exports = [
+	presets.production({
+		name: 'meow',
+		externals,
+		entry: {
+			meow: filePath('src/index.js'),
+		},
+		output: {
+			path: filePath('dist/'),
+		},
+	}),
+];

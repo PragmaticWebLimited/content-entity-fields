@@ -3,6 +3,7 @@
 	"name": "content-entity-fields",
 	"version": "0.1.0-dev",
 	"description": "",
+	"repository": "git@github.com:PragmaticWebLimited/content-entity-fields.git",
 	"author": "Pragmatic Web",
 	"license": "GPL-3.0-only",
 	"engines": {
@@ -26,27 +27,28 @@
 		"useTabs": true
 	},
 	"scripts": {
-		"build": "cross-env NODE_ENV=production webpack -p",
-		"dev": "cross-env webpack -d --watch"
+		"start": "webpack-dev-server -d --config=.webpack/dev.js",
+		"build": "cross-env NODE_ENV=production webpack -p --config=.webpack/prod.js",
+		"lint": "concurrently \"npm run lint-js\" \"npm run lint-pkg-json\""
 	},
 	"devDependencies": {
-		"@babel/core": "^7.7.7",
-		"@babel/plugin-transform-react-jsx": "^7.7.7",
 		"@babel/preset-env": "^7.7.7",
 		"@babel/preset-react": "^7.7.4",
+		"@humanmade/webpack-helpers": "^0.6.1",
 		"@wordpress/browserslist-config": "^2.6.0",
-		"babel-loader": "^8.0.6",
 		"browserslist": "^4.8.2",
-		"core-js": "^3.6.0",
+		"concurrently": "^5.0.2",
+		"core-js": "^3.6.1",
 		"cross-env": "^6.0.3",
 		"eslint": "^6.8.0",
-		"eslint-config-prettier": "^6.7.0",
+		"eslint-config-prettier": "^6.9.0",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-prettier": "^3.1.2",
 		"lint-staged": "^9.5.0",
-		"path": "^0.12.7",
+		"node-sass": "^4.13.0",
 		"prettier": "^1.19.1",
 		"webpack": "^4.41.4",
-		"webpack-cli": "^3.3.10"
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.10.1"
 	}
 }

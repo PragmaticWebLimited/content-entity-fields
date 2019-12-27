@@ -21,7 +21,7 @@
 		},
 		"sourceType": "module"
 	},
-	"plugins": ["react", "jsx-a11y", "prettier"],
+	"plugins": ["prettier", "jsx-a11y"],
 	"root": true,
 	"rules": {
 		"prettier/prettier": "error"

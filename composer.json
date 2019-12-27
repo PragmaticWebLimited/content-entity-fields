@@ -21,7 +21,10 @@
 	},
 	"scripts": {
 		"cghooks": "vendor/bin/cghooks",
-		"post-install-cmd": "cghooks add --ignore-lock",
+		"post-install-cmd": [
+			"cghooks add --ignore-lock",
+			"npm install"
+		],
 		"post-update-cmd": "cghooks update",
 
 		"phpcs": [
@@ -31,7 +34,7 @@
 	"extra": {
 		"hooks": {
 			"pre-commit": [
-				"#npx lint-staged"
+				"npx lint-staged"
 			]
 		}
 	},
