@@ -1,6 +1,6 @@
 <?php
 /**
- * TODO.
+ * Content Entity Fields loader.
  */
 
 declare( strict_types = 1) ;
