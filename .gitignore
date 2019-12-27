@@ -3,6 +3,7 @@
 /vendor
 /cghooks.lock
 /dist/asset-manifest.json
+/.phplint-cache
 
 # Various Mac OS X.
 .DS_Store

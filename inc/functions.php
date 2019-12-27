@@ -3,7 +3,7 @@
  * Content Entity Fields loader.
  */
 
-declare( strict_types = 1) ;
+declare( strict_types = 1 );
 
 namespace Pragmatic\Content_Entity_Fields;
 

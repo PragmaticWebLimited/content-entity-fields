@@ -27,14 +27,21 @@
 		],
 		"post-update-cmd": "cghooks update",
 
+		"lint:php": [
+			"phplint --exclude=vendor --exclude=node_modules --exclude=src ."
+		],
 		"phpcs": [
-			"vendor/bin/phpcs -ps --colors --report-width=80 ."
+			"phpcs -ps --colors --report-width=80 ."
 		]
 	},
 	"extra": {
 		"hooks": {
 			"pre-commit": [
 				"npx lint-staged"
+			],
+			"pre-push": [
+				"lint:php",
+				"phpcs"
 			]
 		}
 	},
@@ -45,6 +52,8 @@
 	"require-dev": {
 		"brainmaestro/composer-git-hooks": "^2.8",
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+		"fig-r/psr2r-sniffer": "^0.6.3",
+		"overtrue/phplint": "^1.2",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"phpunit/phpunit": "^8.5",
 		"wp-coding-standards/wpcs": "^2.2",
