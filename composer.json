@@ -40,7 +40,8 @@
 				"composer run lint:php"
 			],
 			"pre-push": [
-				"composer phpcs"
+				"composer phpcs",
+				"npx prettier --check \"src/**/*.{js,scss}\""
 			]
 		}
 	},
