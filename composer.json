@@ -39,9 +39,9 @@
 		],
 
 		"lint": [
-			"lint:css",
-			"lint:js",
-			"lint:php"
+			"npm run lint:css",
+			"npm run lint:js",
+			"npm run lint:php"
 		]
 	},
 	"extra": {
