@@ -10,12 +10,6 @@
 		"node": "10.13.0",
 		"npm": "6.1.0"
 	},
-	"lint-staged": {
-		"src/**/*.{js,json}": [
-			"eslint",
-			"prettier --list-different"
-		]
-	},
 	"prettier": {
 		"arrowParens": "always",
 		"bracketSpacing": true,
@@ -44,7 +38,6 @@
 		"eslint-config-prettier": "^6.9.0",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-prettier": "^3.1.2",
-		"lint-staged": "^9.5.0",
 		"node-sass": "^4.13.0",
 		"prettier": "^1.19.1",
 		"webpack": "^4.41.4",

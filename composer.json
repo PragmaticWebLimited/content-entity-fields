@@ -37,10 +37,9 @@
 	"extra": {
 		"hooks": {
 			"pre-commit": [
-				"npx lint-staged"
+				"composer run lint:php"
 			],
 			"pre-push": [
-				"composer run lint:php",
 				"composer phpcs"
 			]
 		}
