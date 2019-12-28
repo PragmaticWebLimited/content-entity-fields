@@ -37,11 +37,10 @@
 			"phplint --exclude=vendor --exclude=node_modules --exclude=src .",
 			"phpcs -ps --colors --report-width=80 ."
 		],
-
 		"lint": [
-			"npm run lint:css",
-			"npm run lint:js",
-			"npm run lint:php"
+			"composer run lint:css",
+			"composer run lint:js",
+			"composer run lint:php"
 		]
 	},
 	"extra": {
