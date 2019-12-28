@@ -27,21 +27,27 @@
 		],
 		"post-update-cmd": "cghooks update",
 
-		"lint:php": [
-			"phplint --exclude=vendor --exclude=node_modules --exclude=src ."
+		"lint:css": [
+			"npx prettier --check \"src/**/*.scss\""
 		],
-		"phpcs": [
+		"lint:js": [
+			"npx eslint \"src/**/*.js\""
+		],
+		"lint:php": [
+			"phplint --exclude=vendor --exclude=node_modules --exclude=src .",
 			"phpcs -ps --colors --report-width=80 ."
+		],
+
+		"lint": [
+			"lint:css",
+			"lint:js",
+			"lint:php"
 		]
 	},
 	"extra": {
 		"hooks": {
-			"pre-commit": [
-				"composer run lint:php"
-			],
 			"pre-push": [
-				"composer phpcs",
-				"npx prettier --check \"src/**/*.{js,scss}\""
+				"composer run lint"
 			]
 		}
 	},
