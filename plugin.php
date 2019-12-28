@@ -9,6 +9,8 @@
  * License: GPL-3.0-only
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: content-entity-fields
+ * Requires at least: 5.0
+ * Requires PHP: 7.3.0
  */
 
 declare( strict_types = 1 );
@@ -19,5 +21,8 @@ namespace Pragmatic\Content_Entity_Fields;
 defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/inc/functions.php';
+require_once __DIR__ . '/inc/asset-loader/manifest/functions.php';
+require_once __DIR__ . '/inc/asset-loader/paths/functions.php';
+require_once __DIR__ . '/inc/asset-loader/functions.php';
 
-add_action( 'plugins_loaded', __NAMESPACE__ . '\set_up' );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\init_plugin' );
