@@ -7,8 +7,8 @@
 	"author": "Pragmatic Web",
 	"license": "GPL-3.0-only",
 	"engines": {
-		"node": "10.13.0",
-		"npm": "6.1.0"
+		"node": "12.14.0",
+		"npm": "6.13.0"
 	},
 	"scripts": {
 		"start": "webpack-dev-server -d --config=.webpack/dev.js",
