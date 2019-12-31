@@ -1,11 +1,11 @@
 <h1 align="center">Content Entity Fields</h1>
 <p>
-  <img alt="Version" src="//img.shields.io/badge/version-0.1.0--dev-blue.svg?cacheSeconds=2592000" />
-  <img alt="Requires Node version 12.14.0+" src="//img.shields.io/badge/node-12.14.0-blue.svg" />
-  <img alt="Requires NPM version 6.13.0+" src="//img.shields.io/badge/npm-6.13.0-blue.svg" />
-  <img alt="License: GPL 3.0 only" src="//img.shields.io/badge/License-GPL--3.0--only-yellow.svg" />
-  <a href="//twitter.com/pragmaticweb" target="_blank">
-    <img alt="Twitter: pragmaticweb" src="//img.shields.io/twitter/follow/pragmaticweb.svg?style=social" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0--dev-blue.svg?cacheSeconds=86400" />
+  <img alt="Requires Node version 12.14.0+" src="https://img.shields.io/badge/node-12.14.0-blue.svg" />
+  <img alt="Requires NPM version 6.13.0+" src="https://img.shields.io/badge/npm-6.13.0-blue.svg" />
+  <img alt="License: GPL 3.0 only" src="https://img.shields.io/badge/License-GPL--3.0--only-yellow.svg" />
+  <a href="https://twitter.com/pragmaticweb" target="_blank">
+    <img alt="Twitter: pragmaticweb" src="https://img.shields.io/twitter/follow/pragmaticweb.svg?style=social" />
   </a>
 </p>
 
