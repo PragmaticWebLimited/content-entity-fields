@@ -3,13 +3,17 @@
 	"name": "content-entity-fields",
 	"version": "0.1.0-dev",
 	"description": "",
-	"repository": "git@github.com:PragmaticWebLimited/content-entity-fields.git",
-	"author": "Pragmatic Web",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:PragmaticWebLimited/content-entity-fields.git"
+	},
+	"author": "Pragmatic",
 	"license": "GPL-3.0-only",
 	"engines": {
 		"node": "12.14.0",
 		"npm": "6.13.0"
 	},
+	"homepage": "https://github.com/PragmaticWebLimited/content-entity-fields#readme",
 	"scripts": {
 		"start": "webpack-dev-server -d --config=.webpack/dev.js",
 		"build": "cross-env NODE_ENV=production webpack -p --config=.webpack/prod.js"
