@@ -24,5 +24,6 @@ require_once __DIR__ . '/inc/functions.php';
 require_once __DIR__ . '/inc/asset-loader/manifest/functions.php';
 require_once __DIR__ . '/inc/asset-loader/paths/functions.php';
 require_once __DIR__ . '/inc/asset-loader/functions.php';
+require_once __DIR__ . '/inc/blocks.php';
 
-add_action( 'plugins_loaded', __NAMESPACE__ . '\init_plugin' );
+\add_action( 'plugins_loaded', __NAMESPACE__ . '\init_plugin' );
