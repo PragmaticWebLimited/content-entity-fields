@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Content Entity Fields
  * Plugin URI: https://github.com/PragmaticWebLimited/content-entity-fields/
- * Description: TODO.
+ * Description: Content Entity Fields helps developers add custom fields to content types, utilising the best of WordPress' block editor.
  * Author: Pragmatic Web Limited
  * Author URI: https://pragmatic.agency
  * Version: 0.1.0-dev

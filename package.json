@@ -2,7 +2,7 @@
 	"title": "Content Entity Fields",
 	"name": "content-entity-fields",
 	"version": "0.1.0-dev",
-	"description": "",
+	"description": "Content Entity Fields helps developers add custom fields to content types, utilising the best of WordPress' block editor.",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:PragmaticWebLimited/content-entity-fields.git"

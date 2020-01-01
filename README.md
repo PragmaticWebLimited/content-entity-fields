@@ -9,7 +9,7 @@ __A WordPress project by [Pragmatic](https://pragmatic.agency).__
   <img alt="License: GPL 3.0 only" src="https://img.shields.io/badge/License-GPL--3.0--only-yellow.svg" />
 </p>
 
->  TODO
+> Content Entity Fields helps developers add custom fields to content types, utilising the best of WordPress' block editor.
 
 ---
 

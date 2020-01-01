@@ -1,5 +1,6 @@
 {
 	"name": "pragmaticweb/content-entity-fields",
+	"description": "Content Entity Fields helps developers add custom fields to content types, utilising the best of WordPress' block editor.",
 	"type": "wordpress-plugin",
 	"license": "GPL-3.0-only",
 	"homepage": "https://pragmatic.agency/",
