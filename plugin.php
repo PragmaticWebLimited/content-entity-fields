@@ -9,7 +9,7 @@
  * License: GPL-3.0-only
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: content-entity-fields
- * Requires at least: 5.0
+ * Requires at least: 5.3
  * Requires PHP: 7.3.0
  */
 
