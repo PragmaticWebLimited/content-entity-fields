@@ -19,7 +19,7 @@ __A project by [Pragmatic](https://pragmatic.agency).__
 
 ---
 
-## Prerequisites
+## Requirements
 ### Usage Requirements
 Ensure you have the prerequisite software installed:
 
