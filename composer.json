@@ -60,12 +60,9 @@
 	},
 	"require-dev": {
 		"brainmaestro/composer-git-hooks": "^2.8",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-		"fig-r/psr2r-sniffer": "^0.6.3",
+		"humanmade/coding-standards": "^0.7.0",
 		"overtrue/phplint": "^1.2",
-		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"phpunit/phpunit": "^8.5",
-		"wp-coding-standards/wpcs": "^2.2",
 		"wp-phpunit/wp-phpunit": "^5.3"
 	}
 }

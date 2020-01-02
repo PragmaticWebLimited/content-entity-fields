@@ -1,30 +1,18 @@
 <?xml version="1.0"?>
 <ruleset name="Pragmatic PHP Standards">
+	<!-- Use HM Coding Standards as our base. -->
+	<rule ref="vendor/humanmade/coding-standards" />
+
 	<config name="testVersion" value="7.3-"/>
-	<arg name="parallel" value="8" />
-	<arg name="extensions" value="php" />
 
 	<exclude-pattern>node_modules/*</exclude-pattern>
+	<exclude-pattern>inc/asset-loader/*</exclude-pattern>
 	<exclude-pattern>tests/bootstrap.php</exclude-pattern>
 	<exclude-pattern>vendor/*</exclude-pattern>
-	<exclude-pattern>inc/asset-loader/*</exclude-pattern>
 
-	<!-- Load PHP compatibility checks. -->
-	<rule ref="PHPCompatibilityWP" />
-
-	<!-- Ban inline assignment in control structures. -->
-	<rule ref="PSR2R.ControlStructures.NoInlineAssignment" />
-
-	<!-- Outdated Yoda conditions are. -->
-	<rule ref="WordPress-Core">
-		<exclude name="WordPress.PHP.YodaConditions" />
-	</rule>
-
-	<!-- Prefer alignment over line length. -->
-	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
-		<properties>
-			<property name="maxColumn" value="1000" />
-		</properties>
+	<rule ref="HM">
+		<!-- This is too opionated.-->
+		<exclude name="HM.Files.FunctionFileName" />
 	</rule>
 
 	<!-- Ensure textdomain consistency. -->
@@ -33,37 +21,4 @@
 			<property name="text_domain" type="array" value="content-entity-fields" />
 		</properties>
 	</rule>
-
-	<!-- Allow the use of filesystem functions since we require modern PHP. -->
-	<rule ref="WordPress.WP.AlternativeFunctions">
-		<properties>
-			<property name="exclude" value="file_get_contents,file_system_read" />
-			<property name="exclude" value="json_encode,json_decode" />
-		</properties>
-	</rule>
-
-	<!-- Disallow long array syntax. -->
-	<rule ref="Generic.Arrays.DisallowLongArraySyntax" />
-	<rule ref="Generic.Arrays">
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
-	</rule>
-
-	<!-- Only one PHP statement per line. -->
-	<rule ref="Generic.Formatting.DisallowMultipleStatements" />
-
-	<!-- Namespacing required for classes. -->
-	<rule ref="PSR1.Classes.ClassDeclaration" />
-
-	<!-- Namespacing required for functions. -->
-	<rule ref="PSR2.Namespaces.NamespaceDeclaration" />
-
-	<!-- Declare symbols or run code, but not both. -->
-	<rule ref="PSR1.Files.SideEffects" />
-
-	<!-- Namespacing of `use` statements. -->
-	<rule ref="PSR2.Namespaces.UseDeclaration">
-		<exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations" />
-	</rule>
-	<rule ref="PSR2R.Namespaces.UnusedUseStatement" />
-	<rule ref="PSR2R.Namespaces.UseInAlphabeticalOrder" />
 </ruleset>
