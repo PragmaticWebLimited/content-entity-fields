@@ -39,7 +39,8 @@
 		],
 		"lint:php": [
 			"phplint --exclude=vendor --exclude=node_modules --exclude=src .",
-			"phpcs -ps --colors --report-width=80 ."
+			"phpcs -ps --colors --report-width=80 --standard=phpcompat.xml.dist .",
+			"phpcs -ps --colors --report-width=80 --standard=phpcs.xml.dist ."
 		],
 		"lint": [
 			"composer run lint:css",
