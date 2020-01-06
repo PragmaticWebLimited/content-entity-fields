@@ -1,6 +1,6 @@
 {
 	"title": "Content Entity Fields",
-	"name": "content-entity-fields",
+	"name": "@pragmaticweb/content-entity-fields",
 	"version": "0.1.0-dev",
 	"description": "Content Entity Fields helps developers add custom fields to content types, utilising the best of WordPress' block editor.",
 	"repository": {
@@ -28,7 +28,7 @@
 		"@wordpress/browserslist-config": "^2.6.0",
 		"browserslist": "^4.8.3",
 		"concurrently": "^5.0.2",
-		"core-js": "^3.6.1",
+		"core-js": "^3.6.2",
 		"cross-env": "^6.0.3",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.9.0",
