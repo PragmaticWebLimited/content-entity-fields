@@ -13,6 +13,7 @@
 	<rule ref="HM">
 		<!-- This is too opionated.-->
 		<exclude name="HM.Files.FunctionFileName" />
+		<exclude name="PSR2R.Namespaces.UseInAlphabeticalOrder" />
 	</rule>
 
 	<!-- Ensure textdomain consistency. -->
