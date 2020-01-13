@@ -11,7 +11,7 @@
 	<exclude-pattern>/vendor/*</exclude-pattern>
 
 	<rule ref="HM">
-		<!-- This is too opionated.-->
+		<!-- This is too opinionated.-->
 		<exclude name="HM.Files.FunctionFileName" />
 		<exclude name="PSR2R.Namespaces.UseInAlphabeticalOrder" />
 	</rule>
