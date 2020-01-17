@@ -1,16 +1,15 @@
 /**
- * BLOCK: my-block
+ * CEF text block.
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
  */
 
-//  Import CSS.
 import './style.scss';
 import './editor.scss';
 
-const { __ } = wp.i18n; // Import __() from wp.i18n
-const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
+const { __ } = wp.i18n;
+const { registerBlockType } = wp.blocks;
 
 /**
  * Register: aa Gutenberg Block.
