@@ -6,6 +6,7 @@
 	},
 	"extends": [
 		"eslint:recommended",
+		"plugin:react/recommended",
 		"plugin:jsx-a11y/recommended",
 		"plugin:prettier/recommended"
 	],
@@ -19,16 +20,19 @@
 		"ecmaFeatures": {
 			"jsx": true
 		},
+		"ecmaVersion": 2019,
 		"sourceType": "module"
 	},
-	"plugins": ["prettier", "jsx-a11y"],
+	"plugins": ["prettier", "react", "react-hooks", "jsx-a11y"],
 	"root": true,
 	"rules": {
-		"prettier/prettier": "error"
+		"prettier/prettier": "error",
+		"react/prop-types": "off"
 	},
 	"settings": {
 		"react": {
-			"pragma": "wp"
+			"pragma": "wp",
+			"version": "16.6"
 		}
 	}
 }
