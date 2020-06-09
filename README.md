@@ -1,3 +1,5 @@
+RESEARCH PROJECT - not usable or supported.
+
 # Content Entity Fields
 
 __A project by [Pragmatic](https://pragmatic.agency).__
